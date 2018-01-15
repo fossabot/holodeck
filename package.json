@@ -1,34 +1,30 @@
 {
   "name": "holodeck",
   "version": "0.0.1",
-  "description": "A set of styled-components with easily editable themes.",
-  "main": "index.js",
+  "description": "A set of styled-components components with easily editable themes.",
+  "main": "build/index.js",
   "scripts": {
     "build": "./node_modules/.bin/babel ./src -d ./lib",
-    "bundle": "",
+    "precommit": "./node_modules/.bin/pretty-quick --staged",
     "lint": "./node_modules/.bin/eslint ./src --ext .js,.jsx",
     "lintfix": "./node_modules/.bin/eslint ./src --ext .js,.jsx --fix",
     "test": "./node_modules/.bin/nyc ./node_modules/.bin/mocha --require babel-core/register",
-    "storybook": "",
-    "prepublishOnly": "npm run build"
+    "storybook": "start-storybook -p 6006",
+    "prepublishOnly": "npm run build",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Freedombase/holodeck.git"
   },
-  "keywords": [
-    "styled-components"
-  ],
+  "keywords": ["styled-components", "theme", "UI"],
   "author": "Jan Dvorak <storyteller@freedombase.net>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Freedombase/holodeck/issues"
   },
   "nyc": {
-    "reporter": [
-      "lcov",
-      "text"
-    ]
+    "reporter": ["lcov", "text"]
   },
   "homepage": "https://github.com/Freedombase/holodeck#readme",
   "devDependencies": {
@@ -36,10 +32,24 @@
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.15.0",
     "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.4.0",
     "eslint-plugin-react": "^7.5.1",
+    "husky": "^0.14.3",
     "mocha": "^4.1.0",
-    "nyc": "^11.4.1"
+    "nyc": "^11.4.1",
+    "prettier": "^1.10.2",
+    "pretty-quick": "^1.2.0",
+    "@storybook/react": "^3.3.9",
+    "@storybook/addon-actions": "^3.3.9",
+    "@storybook/addon-links": "^3.3.9"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "styled-components": "^2.4.0"
   }
 }
