@@ -42,7 +42,11 @@ export default class Holodeck extends React.Component {
       }
     `;
 
-    return <ThemeProvider theme={theme}>{this.props.children}</ThemeProvider>;
+    return (
+      <ThemeProvider theme={theme}>
+        {this.props.children}
+      </ThemeProvider>
+    );
   }
 }
 
