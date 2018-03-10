@@ -16,6 +16,12 @@ module.exports = {
       components: "lib/elements/**/index.js",
       description:
         "Elements are the smallest, indivisible parts of UI. They are responsible for actually rendering the UI. They do not handle application logic or UI logic, but they do handle their own modifiers which modify the element’s style. Elements generally exist within the context of a Block (as their own file in the Block’s directory) allowing the reuse of that set of Elements, but they are not exclusively bound to blocks. An example of a stand-alone Element would be an A, Link, H3, or P. These common elements live in `lib/elements`."
+    },
+    {
+      name: "Wrappers",
+      ignore: ["**/__tests__/**", "**/wrappers/index.js"],
+      components: "lib/wrappers/**/index.js",
+      description: "Wrapper elements for additional functionality."
     }
   ],
   styleguideComponents: {

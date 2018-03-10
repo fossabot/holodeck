@@ -1,19 +1,16 @@
-import React, { Component } from "react";
-import { ThemeProvider, injectGlobal } from 'styled-components';
-
-import buildGlobalStyles from 'config/buildGlobalStyles';
+import React, { Component } from 'react';
 import configureFonts from 'config/configureFonts';
-import theme from 'config/theme';
+import theme from '../../lib/themes/default-light';
+import Holodeck from '../../lib/wrappers/Holodeck/index';
 
-injectGlobal([buildGlobalStyles(theme)]);
-configureFonts(theme);
+// configureFonts(theme);
 
 export default class ThemeWrapper extends Component {
   render() {
     return (
-      <ThemeProvider theme={theme}>
+      <Holodeck theme={theme}>;
         {this.props.children}
-    </ThemeProvider>
+      </Holodeck>
     );
   }
 }

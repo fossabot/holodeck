@@ -2,7 +2,7 @@ import FontFaceObserver from "fontfaceobserver";
 
 function configureFonts(theme) {
   // You could add multiple fonts here, but for this example, we're only using one.
-  const fonts = [theme.fonts.primary];
+  const fonts = [theme.globals.primaryFont];
   const fontObserver = new FontFaceObserver(fonts, {});
 
   function fontLoadSuccess() {
