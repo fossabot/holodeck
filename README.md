@@ -4,7 +4,7 @@ _A set of [styled-components](https://github.com/styled-components/styled-compon
 ## Overview
 This component lib is set up to use
  [styled-components](https://github.com/styled-components/styled-components),
- [polished](https://github.com/styled-components/polished), and [styled-components-modifiers](https://github.com/Decisiv/styled-components-modifiers) 💅. This
+ [polished](https://github.com/styled-components/polished), and [styled-theming](https://github.com/styled-components/styled-theming) 💅. This
  starter is designed to help you create your own components and easily publish them to npm.
 
 ## Up & Running
@@ -39,7 +39,7 @@ Elements are the smallest, indivisible parts of UI. They are responsible for act
 
 ### Modifiers
 This library utilizes
- [`styled-components-modifiers`](https://github.com/Decisiv/styled-components-modifiers) to build
+ [styled-theming](https://github.com/styled-components/styled-theming) to build
  modifiers. Modifiers are small functions that allow us to alter the properties of an Element.
  They primarily live in the Element's file and are solely responsible for modifying styles.
  Some modifiers are common to multiple Elements. An example would be `fontWeights`.

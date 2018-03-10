@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import configureFonts from 'config/configureFonts';
-import theme from '../../lib/themes/default-light';
+import { theme } from '../../lib/themes/default-light';
 import Holodeck from '../../lib/wrappers/Holodeck/index';
 
 // configureFonts(theme);

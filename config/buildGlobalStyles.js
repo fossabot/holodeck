@@ -7,7 +7,7 @@ function buildGlobalStyles(theme) {
       background-color: ${theme.colors.background};
       color: ${theme.colors.text};
       font-family: ${theme.fonts.primaryFallback};
-      font-size: ${theme.dimensions.baseFontSize}px;
+      font-size: ${theme.dimensFions.baseFontSize}px;
       font-weight: 400;
       height: 100%;
       margin: 0;
