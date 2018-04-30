@@ -1,4 +1,6 @@
 # Holodeck
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FFreedombase%2Fholodeck.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FFreedombase%2Fholodeck?ref=badge_shield)
+
 _A set of [styled-components](https://github.com/styled-components/styled-components) with easily editable themes._
 
 ## Overview
@@ -171,6 +173,9 @@ the Code of Conduct in the [Contributing Guidelines](https://github.com/alanbsmi
 
 ## License
 [MIT](https://github.com/Freedombase/holodeck/blob/master/LICENSE)
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FFreedombase%2Fholodeck.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FFreedombase%2Fholodeck?ref=badge_large)
 
 ## Based on
 This library is based on [Component Library Starter](https://github.com/alanbsmith/component-library-starter).
